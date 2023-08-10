@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'pages/HomePage.dart';
 import 'pages/LoginPage.dart';
 
+import 'package:google_fonts/google_fonts.dart';
+
 // void main() {
 //   runApp(MaterialApp(
 //     home: Text("Harshita Kashyap"),
@@ -41,12 +43,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "First App",
+      themeMode: ThemeMode.light,
+      themeAnimationCurve: Curves.bounceInOut,
       // home: LoginPage(),
       theme: ThemeData(
         scaffoldBackgroundColor: Color.fromARGB(255, 233, 215, 180),
         primarySwatch: Colors.brown,
         brightness: Brightness.light,
         primaryColor: Colors.amber,
+        fontFamily: GoogleFonts.lato().fontFamily,
       ),
       initialRoute: "/",
       routes: {

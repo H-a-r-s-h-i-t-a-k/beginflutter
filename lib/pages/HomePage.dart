@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       body: _bodyWidget(),
-      drawer: Drawer(),
+      drawer: const Drawer(),
     );
   }
 }
